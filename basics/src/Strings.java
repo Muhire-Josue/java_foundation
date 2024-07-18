@@ -9,5 +9,8 @@ public class Strings {
         System.out.println(nameInUpperCase);
         String nameInLowerCase = myName.toLowerCase();
         System.out.println(nameInLowerCase);
+        String firstname = "John";
+        String lastname = "John";
+        System.out.println(firstname.equals(lastname));
     }
 }
