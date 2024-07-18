@@ -15,5 +15,11 @@ public class Primitives {
         System.out.println(anotherVariable);
         int sum = j +i;
         System.out.println(sum);
+        boolean iAmYoungerThan30 = true;
+        System.out.println(iAmYoungerThan30);
+        char myFirstNameStartsWith = 'J';
+        System.out.println(myFirstNameStartsWith);
+        int[] myArray = {1,2,3,4,5,6};
+        System.out.println(myArray[0]);
     }
 }
