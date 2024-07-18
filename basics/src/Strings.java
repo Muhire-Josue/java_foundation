@@ -12,5 +12,7 @@ public class Strings {
         String firstname = "John";
         String lastname = "John";
         System.out.println(firstname.equals(lastname));
+        lastname = "Doe";
+        System.out.println(firstname + " " + lastname);
     }
 }
