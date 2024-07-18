@@ -1,6 +1,6 @@
 public class Primitives {
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
 //        System.out.println("Hello world!");
         int i = 1;
         System.out.println(i);

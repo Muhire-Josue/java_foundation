@@ -1,6 +1,6 @@
 public class Conditions {
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         int testScore = 0;
 
         if (testScore >= 50){

@@ -1,6 +1,6 @@
 public class Loops {
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         for (int i = 50; i <=55; i++){
             System.out.println(i*3);
         }
