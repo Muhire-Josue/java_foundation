@@ -7,6 +7,17 @@ public class Employee {
     private String jobTitle;
     private String department;
 
+    public String getMailingName(){
+        return title + " " + firstName + " " + surname;
+    }
+
+    public String getMailingName(boolean firstInitialOnly){
+        if(firstInitialOnly){
+            return title + " " + firstName.charAt(0) + " " + surname;
+        }
+        return title + " " + firstName + " " + surname;
+    }
+
     public Employee() {
     }
 
