@@ -7,6 +7,17 @@ public class Employee {
     private String jobTitle;
     private String department;
 
+    public Employee() {
+    }
+
+    public Employee(String title, String firstName, String surname, String jobTitle, String department) {
+        this.title = title;
+        this.firstName = firstName;
+        this.surname = surname;
+        this.jobTitle = jobTitle;
+        this.department = department;
+    }
+
     public String getTitle() {
         return title;
     }
