@@ -11,6 +11,6 @@ public class Main {
         System.out.println(employee.getMailingName());
 
         Department department =  new Department("Finance", "Sally Green");
-        System.out.println(department.getManagerName());
+        System.out.println(department.getName());
     }
 }
