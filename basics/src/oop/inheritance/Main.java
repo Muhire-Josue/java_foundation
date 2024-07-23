@@ -8,11 +8,18 @@ public class Main {
         TrainTicket trainTicket = new TrainTicket();
         trainTicket.cancel();
 
+        String[] providers = {"First provider", "Second provider"};
+
         TrainTicket trainTicket2 = new TrainTicket(123L, "London", "Edinburgh", new BigDecimal("59.0"),
-                LocalDateTime.of(2022, 3, 7, 16, 3),
+                LocalDateTime.of(2024, 8, 23, 16, 3),
                 LocalDateTime.of(2022, 3, 7, 19, 3),
                 3, 3, 42);
 
-        trainTicket2.upgrate();;
+        BusTicket busTicket = new BusTicket(123L, "London", "Edinburgh", new BigDecimal("59.0"),
+                LocalDateTime.of(2024, 8, 20, 16, 3),
+                LocalDateTime.of(2022, 3, 7, 19, 3), providers);
+
+        trainTicket2.upgrate();
+        busTicket.cancel();
     }
 }

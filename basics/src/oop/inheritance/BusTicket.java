@@ -29,7 +29,7 @@ public class BusTicket extends TravelTicket{
     @Override
     public void cancel() {
         Duration d = Duration.between(LocalDateTime.now(), getDepartureTime());
-        Long days = d.toDays();
+        long days = d.toDays();
         if (days > 30){
             super.cancel();
         } else {
