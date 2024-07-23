@@ -42,4 +42,14 @@ public class PlaneTicket extends TravelTicket{
     public void setStopOver(Integer stopOver) {
         this.stopOver = stopOver;
     }
+
+    public void upgrade(){
+        travelClass = 1;
+        System.out.println("You have been upgraded");
+    }
+
+    public void addStopOver(){
+        stopOver++;
+        System.out.println("You have" + " " + stopOver + " " + "stop overs");
+    }
 }
