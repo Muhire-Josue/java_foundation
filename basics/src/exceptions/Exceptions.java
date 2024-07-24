@@ -1,5 +1,7 @@
 package exceptions;
 
+import java.time.LocalDate;
+
 public class Exceptions {
 
     public static void divideByZero(){
@@ -9,6 +11,8 @@ public class Exceptions {
     public static void main(String[] args) {
         Integer[] integers = new Integer[] {1,2,3,4};
 //        System.out.println(integers[9]);
-        divideByZero();
+//        divideByZero();
+        LocalDate today = null;
+        System.out.println(today.getMonth());
     }
 }
