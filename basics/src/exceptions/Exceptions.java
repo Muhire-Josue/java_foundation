@@ -13,6 +13,8 @@ public class Exceptions {
 //        System.out.println(integers[9]);
 //        divideByZero();
         LocalDate today = null;
-        System.out.println(today.getMonth());
+//        System.out.println(today.getMonth());
+        String hello = "hello";
+        Double.valueOf(hello);
     }
 }
