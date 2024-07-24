@@ -1,5 +1,7 @@
 package exceptions;
 
+import classes.User;
+
 import java.time.LocalDate;
 
 public class Exceptions {
@@ -15,6 +17,7 @@ public class Exceptions {
         LocalDate today = null;
 //        System.out.println(today.getMonth());
         String hello = "hello";
-        Double.valueOf(hello);
+//        Double.valueOf(hello);
+        User user = new User("John Doe", -9);
     }
 }
