@@ -3,26 +3,27 @@ package oop.inheritance;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class BusTicket extends TravelTicket{
 
-    private String[] permittedProviders;
+    private ArrayList<String> permittedProviders;
 
     public BusTicket() {
         super();
     }
 
     public BusTicket(Long bookingRef, String origin, String destination, BigDecimal price, LocalDateTime departureTime,
-                     LocalDateTime arrivalTime, String[] permittedProviders) {
+                     LocalDateTime arrivalTime, ArrayList<String> permittedProviders) {
         super(bookingRef, origin, destination, price, departureTime, arrivalTime);
         this.permittedProviders = permittedProviders;
     }
 
-    public String[] getPermittedProviders() {
+    public ArrayList<String> getPermittedProviders() {
         return permittedProviders;
     }
 
-    public void setPermittedProviders(String[] permittedProviders) {
+    public void setPermittedProviders(ArrayList<String> permittedProviders) {
         this.permittedProviders = permittedProviders;
     }
 
