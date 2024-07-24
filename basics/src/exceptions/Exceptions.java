@@ -18,10 +18,10 @@ public class Exceptions {
 //        System.out.println(today.getMonth());
         String hello = "hello";
 //        Double.valueOf(hello);
-        try {
-            User user = new User("John Doe", -9);
-        } catch (InvalidAgeException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            User user = new User("John Doe", -9);
+//        } catch (InvalidAgeException e) {
+//            e.printStackTrace();
+//        }
     }
 }
