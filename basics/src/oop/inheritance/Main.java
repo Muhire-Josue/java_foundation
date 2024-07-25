@@ -34,5 +34,10 @@ public class Main {
         for (TravelTicket ticket: tickets){
             System.out.println(ticket);
         }
+
+        BookingSystem bookingSystem = new EnjoyableToursBookingSystem();
+        bookingSystem.getStatus();
+        bookingSystem.requestBooking();
+        bookingSystem.setTravelTicket(trainTicket);
     }
 }
