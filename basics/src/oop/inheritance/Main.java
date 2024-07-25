@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         TrainTicket trainTicket = new TrainTicket();
         trainTicket.cancel();
+        ArrayList<TravelTicket> tickets = new ArrayList<TravelTicket>();
 
 //        String[] providers = {"First provider", "Second provider"};
 
@@ -26,5 +27,12 @@ public class Main {
 
         trainTicket2.upgrate();
         busTicket.cancel();
+
+        tickets.add(trainTicket2);
+        tickets.add(busTicket);
+
+        for (TravelTicket ticket: tickets){
+            System.out.println(ticket);
+        }
     }
 }
