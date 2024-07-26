@@ -31,9 +31,11 @@ public class Main {
         tickets.add(trainTicket2);
         tickets.add(busTicket);
 
-        for (TravelTicket ticket: tickets){
-            System.out.println(ticket);
-        }
+//        for (TravelTicket ticket: tickets){
+//            System.out.println(ticket);
+//        }
+
+        tickets.stream().filter(a -> a.getOrigin().equals("London")).forEach(a -> System.out.println(a));
 
         BookingSystem bookingSystem = new EnjoyableToursBookingSystem();
         bookingSystem.getStatus();
